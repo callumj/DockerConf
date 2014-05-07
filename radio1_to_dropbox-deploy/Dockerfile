@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:latest
 
 MAINTAINER Callum Jones <callum@callumj.com>
 
