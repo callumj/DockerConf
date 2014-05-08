@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
 RUN apt-get -y update
 
 RUN mkdir -p /temp/ruby
