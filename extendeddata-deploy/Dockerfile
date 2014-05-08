@@ -1,3 +1,4 @@
+# VERSION 0.02
 FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
