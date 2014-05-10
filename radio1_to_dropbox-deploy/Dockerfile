@@ -1,4 +1,4 @@
-# VERSION 0.01
+# VERSION 0.02
 FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
@@ -70,4 +70,4 @@ ADD boot.sh /boot.sh
 RUN chmod +x /boot.sh
 
 WORKDIR /
-CMD /bin/sh -c "./boot.sh"
+CMD /bin/sh -c "cd /radio1_to_dropbox && ./boot.sh"
