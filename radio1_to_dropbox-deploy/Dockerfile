@@ -1,4 +1,4 @@
-# VERSION 0.02
+# VERSION 0.03
 FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
@@ -63,11 +63,7 @@ RUN git clone git@github.com:callumj/radio1_to_dropbox.git /radio1_to_dropbox
 WORKDIR /radio1_to_dropbox
 RUN bundle install
 
-RUN echo "cd /radio1_to_dropbox" > /boot.sh
-RUN echo "git pull origin master" >> /boot.sh
-RUN echo "bundle install" >> /boot.sh
-ADD boot.sh /boot.sh
 RUN chmod +x /boot.sh
 
 WORKDIR /
-CMD /bin/sh -c "cd /radio1_to_dropbox && ./boot.sh"
+CMD /bin/sh -c "./boot.sh"
