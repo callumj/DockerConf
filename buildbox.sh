@@ -1,3 +1,4 @@
+export
 curl "https://api.buildbox.io/v1/projects/callumj/weave_projects/builds?api_key=$BUILDBOX_API_KEY" \
 -X POST \
 -F "commit=master" \
