@@ -1,4 +1,4 @@
-curl "https://api.buildbox.io/v1/projects/callumj/weave_projects/builds?api_key=$BUILDBOX_API_KEY" \
+curl "https://api.buildbox.io/v1/projects/callumj/weave-projects/builds?api_key=$BUILDBOX_API_KEY" \
 -X POST \
 -F "commit=master" \
 -F "branch=master" \
