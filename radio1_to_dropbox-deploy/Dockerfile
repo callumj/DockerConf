@@ -1,4 +1,4 @@
-# VERSION 0.03
+# VERSION 0.04
 FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
@@ -63,6 +63,7 @@ RUN git clone git@github.com:callumj/radio1_to_dropbox.git /radio1_to_dropbox
 WORKDIR /radio1_to_dropbox
 RUN bundle install
 
+ADD boot.sh /boot.sh
 RUN chmod +x /boot.sh
 
 WORKDIR /
