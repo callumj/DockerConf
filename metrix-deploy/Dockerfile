@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
 
-EXPOSE 8080
+EXPOSE 8080 6379
 ENV DOMAIN metrix.callumj.com
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe multiverse" > /etc/apt/sources.list
