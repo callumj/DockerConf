@@ -43,7 +43,7 @@ for BaseName in *; do
       if ! [[ $currentRunning == *"${BaseName}"* ]]; then
         docker rm ${BaseName}
         additionalargs=""
-        if ! [ -f "${BaseName}/additional_args" ]
+        if [ -f "${BaseName}/additional_args" ]
         then
           additionalargs=`cat ${BaseName}/additional_args`
         fi
