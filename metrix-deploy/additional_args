@@ -1,0 +1,1 @@
+-v /mnt/data/docker_storage/metrix/redis_data:/redis_data:rw
