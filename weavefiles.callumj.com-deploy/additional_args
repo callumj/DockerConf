@@ -1,0 +1,1 @@
+-v /mnt/data/docker_storage/weavefiles/nginx_log:/app_logs:rw -v /opt/buildbox/.buildbox/nl2/callumj/weave/builds:/weave_builds:ro
