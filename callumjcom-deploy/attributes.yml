@@ -1,0 +1,6 @@
+---
+
+volumes:
+  /app_logs: "/opt/callumj_logging:rw"
+exposed_ports:
+  - 80/tcp

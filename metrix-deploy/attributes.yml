@@ -1,0 +1,7 @@
+---
+
+volumes:
+  /redis_data: "/mnt/data/docker_storage/metrix/redis_data:rw"
+exposed_ports:
+  - 8080/tcp
+  - 6379/tcp

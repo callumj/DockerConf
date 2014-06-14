@@ -1,4 +1,4 @@
-# VERSION 0.10
+# VERSION 0.11
 FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
@@ -23,6 +23,6 @@ RUN chmod +x boot.sh
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN npm install -g grunt-cli
-RUN gem install sass
+RUN gem install --no-ri --no-rdoc sass
 
 CMD /bin/bash "/boot.sh"
