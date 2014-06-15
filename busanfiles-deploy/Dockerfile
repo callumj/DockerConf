@@ -1,5 +1,5 @@
 # VERSION 0.02
-FROM weavefiles-deploy
+FROM weavefiles-deploy:v0.12
 
 MAINTAINER Callum Jones <callum@callumj.com>
 
