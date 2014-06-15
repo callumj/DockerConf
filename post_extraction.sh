@@ -1,4 +1,7 @@
 #!/bin/bash
 for BaseName in *; do
-  `busan "${BaseName}/Dockerfile"`
+  if [ -f "${BaseName}/Dockerfile" ]
+  then
+    busan "${BaseName}"
+  fi
 done
