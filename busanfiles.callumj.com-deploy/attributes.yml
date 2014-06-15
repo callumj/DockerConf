@@ -1,0 +1,8 @@
+---
+
+volumes:
+  /app_logs: "/mnt/data/docker_storage/busanfiles/nginx_log:rw"
+  /weave_builds: "/opt/buildbox/.buildbox/nl2/callumj/busan/builds:ro"
+  /weave_builds: /mnt/data/docker_storage/busanfiles/static_files:ro"
+exposed_ports:
+  - 80/tcp
