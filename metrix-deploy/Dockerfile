@@ -9,7 +9,7 @@ ENV DOMAIN metrix.callumj.com
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe multiverse" > /etc/apt/sources.list
 RUN apt-get -y update
 
-RUN apt-get install -y redis-server golang git
+RUN apt-get install -y redis-server
 RUN mkdir -p /opt/go
 RUN mkdir /app
 
