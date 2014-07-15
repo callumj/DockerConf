@@ -13,6 +13,8 @@ npm install
 grunt build
 phantomjs phantom.js
 
+curl -X POST "http://metrix.callumj.com/version?source=t&key=$NAME&version=$VERSION"
+
 nginx -c /etc/nginx/app.conf &
 sleep 1
 tail -f /app_logs/error*
