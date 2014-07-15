@@ -1,4 +1,4 @@
-# VERSION 0.13
+# VERSION 0.17
 FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
@@ -9,13 +9,14 @@ ENV DOMAIN metrix.callumj.com
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe multiverse" > /etc/apt/sources.list
 RUN apt-get -y update
 
-RUN apt-get install -y redis-server
+RUN apt-get install -y redis-server golang git
 RUN mkdir -p /opt/go
 RUN mkdir /app
+RUN mkdir /redis_data
 
 ADD boot.sh /boot.sh
 ADD go.sh /etc/profile.d/go.sh
-ADD redis.conf /etc/redis/redis.conf
+ADD redis.conf /etc/redis.conf
 ADD metrix.yml /etc/metrix.yml
 
 RUN chmod +x boot.sh

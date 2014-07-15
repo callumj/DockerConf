@@ -6,6 +6,6 @@ source /etc/profile
 
 go get -u github.com/callumj/metrix
 
-service redis-server start
+redis-server /etc/redis.conf
 
 /opt/go/bin/metrix /etc/metrix.yml
