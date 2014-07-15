@@ -37,6 +37,7 @@ RUN bundle install
 RUN echo "cd /extendeddata" > /boot.sh
 RUN echo "git pull origin master" >> /boot.sh
 RUN echo "bundle install" >> /boot.sh
+RUN echo "curl -X POST \"http://metrix.callumj.com/version?source=docker&key=$NAME&version=$VERSION\"" >> /boot.sh
 RUN echo "RAILS_ENV=production clockwork clockwork.rb" >> /boot.sh
 RUN chmod +x /boot.sh
 
