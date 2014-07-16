@@ -9,7 +9,7 @@ ENV DOMAIN callumj.com
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe multiverse" > /etc/apt/sources.list
 RUN apt-get -y update
 
-RUN apt-get install -y npm phantomjs nginx git ruby
+RUN apt-get install -y npm phantomjs nginx git ruby curl
 RUN rm -r -f /etc/nginx/conf.d/*
 
 RUN mkdir -p /app

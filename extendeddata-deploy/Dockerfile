@@ -7,7 +7,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/
 RUN apt-get -y update
 
 RUN mkdir -p /temp/ruby
-RUN apt-get install -y build-essential libssl-dev zlib1g-dev
+RUN apt-get install -y build-essential libssl-dev zlib1g-dev curl
 RUN apt-get install -y wget git openssh-client libpq-dev
 
 RUN wget -q http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p451.tar.gz -O /temp/ruby.tgz
