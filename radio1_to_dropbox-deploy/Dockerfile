@@ -1,4 +1,4 @@
-# VERSION 0.04
+# VERSION 0.05
 FROM ubuntu:14.04
 
 MAINTAINER Callum Jones <callum@callumj.com>
@@ -7,7 +7,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe multiverse" 
 RUN apt-get -y update
 
 RUN mkdir -p /temp/ruby
-RUN apt-get install -y build-essential libssl-dev zlib1g-dev libxml2-dev libxslt-dev
+RUN apt-get install -y build-essential libssl-dev zlib1g-dev libxml2-dev libxslt-dev curl
 RUN apt-get install -y wget git openssh-client libpq-dev
 RUN apt-get install -y autoconf automake build-essential libass-dev libgpac-dev
 RUN apt-get install -y libxext-dev pkg-config zlib1g-dev libmp3lame-dev
